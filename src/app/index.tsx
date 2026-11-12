@@ -1,11 +1,18 @@
+import ThemeText from '@/components/ThemeText';
+import { globalStyles } from '@/styles/global-styles';
 import { Text, View } from 'react-native';
+
+<Text style={{ fontSize: 50, fontFamily: 'SpaceMono', color: 'white' }}>CalculatorApp</Text>
+
+
+
 
 const CalculatorApp = () => {
   return (
-    <View>
-      <Text>CalculatorApp</Text>
+    <View style={globalStyles.calculatorContainer}>
+      <ThemeText variant="h1">50 x 500000000000000</ThemeText>
+      <ThemeText variant="h2">2500</ThemeText>
     </View>
   );
 };
-
 export default CalculatorApp;
